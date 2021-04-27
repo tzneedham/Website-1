@@ -1,0 +1,364 @@
+body {
+	color: #A86745;
+    background-color: F3F3F4;
+	font-family: 'times new roman';
+    font-size: small;
+    line-height: em;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+}
+
+#home {
+    margin-right: 01;
+    margin-left: 0;
+    width: 100%;
+}
+
+a {
+    color: #A86745;
+    font-family: 'times new roman';
+    font-size: small;
+}
+
+a2 {
+    color: white;
+    font-family: 'times new roman';
+    font-size: small;
+    
+}
+
+
+h1 {
+    color: #4e565f;
+    font-family: 'times new roman';
+    font-size: 125%;
+}
+
+h3 {
+    color: white
+}
+
+/* ------food / all blog website layouts----- */
+
+div#food {
+    text-align: left;
+    padding: 5% 6%;
+}
+div#food h1 {
+	color: #A86745;
+	font-family: 'times new roman';
+    font-size: 150%;
+}
+div#food h2 {
+    color: #4e565f;
+    font-family: 'times new roman';
+    font-size: 125%;
+}
+div.dgrey {
+    background-color: #f0f0f0;
+}
+div.dwhite {
+    background-color: white;
+}
+
+#food .column1 {
+    float: left;
+    width: 60%;
+    padding: 3px;
+    height: 200px;
+    text-align: center;
+    vertical-align: center;
+}
+
+#food .column2 {
+    padding: 60px 30px;
+    margin: 0 5% 0 60%;
+    width: 50%;
+    height: 300px;
+    text-align: left;
+}
+
+#foodmobile {
+    display: none;
+}
+
+
+/* ~~~~~~body general ~~~~~~ */
+
+#bodycontent {
+    padding: 7%;
+    margin: 0 10%;
+    text-align: left;
+}
+
+#bodycontent p {
+    text-align: left;
+    background-color: rgba(255,215,57,0.5);
+    padding: 20px 25px;
+}
+
+
+img {
+    max-width: 100%;
+    height: relative;
+}
+
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 4%;
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* ~~~~~~home general~~~~~~ */
+
+
+#homescreen {
+    text-align: center;
+    width: 100%;
+    padding: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#homescreen h2 {
+    color: #4e565f;
+    font-family: 'times new roman';
+    font-size: 170%;
+}
+
+#homescreen .column {
+    width: 30%;
+}
+
+#homemobile {
+    display: none;
+}
+
+
+.mobile {
+    display: none;
+}
+
+
+/* ------footer . nav . responsive ----- */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #2F4040;
+    color: white;
+    text-align: center; 
+    vertical-align: middle;
+    font-size: 100%;
+}
+
+/* ------ navigation main ----- */
+
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 2%;
+    width: 70%;
+    left: 14%;
+    right: 9%;
+    padding-left: 16%;
+    z-index: 9999;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #A86745;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: #4e565f;
+    border-bottom: solid;
+    border-bottom-color: #0000;
+}
+
+.active {
+    background-color: white;
+    color: #4e565f;
+    border-bottom: solid;
+    border-bottom-color: #2F4040;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+
+/* ------ respsonsive specifications ----- */
+
+@media screen and (max-width: 1400px) {
+    body {
+        margin-top: 10%;
+    }
+}
+@media screen and (max-width: 900px) {
+    #food {
+        padding: 2% 4%;
+    }
+    #food h2 {
+        font-size: 1.3em;
+    }
+    #food p {
+        font-size: .9em;
+    }
+    #food .column2 {
+        height: auto;
+    }
+    body {
+        margin-top: 10%;
+    }
+  }
+
+@media screen and (max-width: 700px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+    .topnav.responsive {position: fixed;}
+    .topnav.responsive .icon {
+  }
+    
+    /* ------ navigation mobile specifications ----- */
+    
+.topnav.responsive a {
+    float: none;
+    overflow: hidden;
+    display: block;
+    text-align: left;
+  }
+.topnav.responsive {
+    background-color: rgba(255,255,255,.5);
+    width: 100%;
+    left: 0;
+    }
+    
+    .topnav a:hover {
+        background-color: rgba(255,255,255,.5);
+        border: none;
+    }
+    .active {
+        background-color: rgba(255,255,255,.5);
+        border: none;
+    }
+    
+    div.site-wrap {
+        margin-top: 10%;
+    }
+
+    
+    /* ~~~~~~food mobile ~~~~~~ */
+    
+    #foodmobile {
+        padding: 0% 1%;
+        display: inline-block;
+    }
+    
+    .dgrey {
+        padding-top: 4%;
+        padding-bottom: 10%
+    }
+    
+    .dmimg {
+        padding: 6%;
+        text-align: center;
+    }
+    
+    .dmtext {
+        padding: 5% 10%;
+        text-align: left;
+    }
+    
+    
+    #foodscreen {
+        display: none;
+    }
+    
+	#foodmobile h1 {
+		font-family: 'times new roman';
+        font-size: 1.8em;
+	}
+	
+	#foodmobile h2 {
+		font-family: 'times new roman';
+         font-size: 1.4em;
+	}
+
+	#foodmobile {
+		font-family: 'times new roman';
+    	font-size: small;
+    	line-height: 1.6em;
+        padding-bottom: 10
+	}
+	
+    /* ~~~~~~home mobile ~~~~~~ */
+    
+    #home {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    #homescreen {
+        display: none;
+    }
+
+    #homemobile {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 0% 10% 5% 10%;
+}
+	
+
+	#homemobile {
+		font-family: 'times new roman';
+    	font-size: small;
+    	line-height: 1.6em;
+    }
+    
+    
+    span.a {
+        display: inline;
+        display: inline;
+        width: none;
+        height: none;
+        padding: none;
+        border: none;
+        background-color: none;
+    }
+
+
+
+
+
+
